@@ -1,0 +1,20 @@
+
+.energy-ring {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  border: 2px solid #5BE8E0;
+  border-radius: 50%;
+  box-shadow: 0 0 30px #5BE8E0, inset 0 0 20px #5BE8E0;
+  animation: pulse 2s infinite ease-in-out;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes pulse {
+  0% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+  50% { transform: translate(-50%, -50%) scale(1.15); opacity: 0.6; }
+  100% { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+}
